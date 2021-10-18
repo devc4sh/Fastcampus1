@@ -1,0 +1,5 @@
+가게 목록.
+{% for Shop in shop_list %}
+    <h5><a href="/order/menus/{{ Shop.id }}"> {{ Shop.shop_name }}</a></h5>
+    <h5> {{ Shop.shop_address }}</h5>
+{% endfor %}
